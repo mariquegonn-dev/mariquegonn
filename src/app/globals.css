@@ -36,7 +36,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-black-secundary;
   }
   body {
     @apply text-foreground;
