@@ -21,9 +21,9 @@ export default function RootLayout({
         <link rel="icon" href="/icon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/icon.png" type="image/png" />
       </head>
-      <body className={`${GeistSans.className} bg-black-primary`}>
+      <body className={`${GeistSans.className} bg-black-primary flex`}>
         <Header />
-        {children}
+        <div className="h-[2000px]">{children}</div>
       </body>
     </html>
   );
