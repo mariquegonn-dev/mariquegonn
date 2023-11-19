@@ -1,9 +1,21 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+"use client";
+
 import { HeaderProps } from "@/config/nav/header-nav.type";
 import Link from "next/link";
 import { AvatarCustom } from "../../Avatar";
+import useMedia from "@/hooks/use-media";
+import { useMenuMobileStore } from "@/store/menu-mobile.store";
 
 export const HeaderNav = ({ config, social }: HeaderProps) => {
+  const media = useMedia("(max-width: 1024px)");
+  const { addOpen } = useMenuMobileStore();
+
+  function clickInLinkMobile() {
+    if (media) {
+      addOpen(false);
+    }
+  }
+
   return (
     <div className="flex flex-col h-full">
       <div className="flex gap-3 items-center py-6 px-5 border-b-[1px]">
@@ -26,7 +38,8 @@ export const HeaderNav = ({ config, social }: HeaderProps) => {
             >
               <Link
                 href={item.href}
-                className="flex gap-3 items-center py-5 px-5  "
+                className="flex gap-3 items-center py-5 px-5"
+                onClick={clickInLinkMobile}
               >
                 {item.icon}{" "}
                 <span className="text-base font-light tracking-wide text-gray-400 group-hover:text-white transition-all">

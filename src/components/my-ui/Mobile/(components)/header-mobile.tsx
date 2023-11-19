@@ -1,21 +1,15 @@
 "use client";
 
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { HeaderProps } from "@/config/nav/header-nav.type";
 import { ListIcon } from "@/components/icons";
 import { HeaderNav } from "../../Header/(components)/header-nav";
+import { useMenuMobileStore } from "@/store/menu-mobile.store";
 
 export const HeaderMobile = ({ config, social }: HeaderProps) => {
+  const { open, addOpen } = useMenuMobileStore();
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={addOpen}>
       <SheetTrigger>
         <ListIcon size={32} weight="light" />
       </SheetTrigger>
