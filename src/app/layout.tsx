@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import { Header } from "@/components/my-ui/Header";
+import { Mobile } from "@/components/my-ui/Mobile";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,6 +24,7 @@ export default function RootLayout({
       </head>
       <body className={`${GeistSans.className} bg-black-primary flex`}>
         <Header />
+        <Mobile />
         <div className="h-[2000px]">{children}</div>
       </body>
     </html>

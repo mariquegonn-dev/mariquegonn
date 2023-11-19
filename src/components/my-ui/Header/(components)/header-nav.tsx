@@ -1,12 +1,8 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { HeaderNavType } from "@/config/nav/header-nav.type";
+import { HeaderProps } from "@/config/nav/header-nav.type";
 import Link from "next/link";
 
-type HeaderNavProps = {
-  config: HeaderNavType;
-  social: SocialType;
-};
-export const HeaderNav = ({ config, social }: HeaderNavProps) => {
+export const HeaderNav = ({ config, social }: HeaderProps) => {
   return (
     <div className="flex flex-col h-full">
       <div className="flex gap-3 items-center py-6 px-5 border-b-[1px]">
