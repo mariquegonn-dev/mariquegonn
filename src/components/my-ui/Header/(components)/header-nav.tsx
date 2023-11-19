@@ -1,15 +1,13 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { HeaderProps } from "@/config/nav/header-nav.type";
 import Link from "next/link";
+import { AvatarCustom } from "../../Avatar";
 
 export const HeaderNav = ({ config, social }: HeaderProps) => {
   return (
     <div className="flex flex-col h-full">
       <div className="flex gap-3 items-center py-6 px-5 border-b-[1px]">
-        <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
+        <AvatarCustom src="https://github.com/shadcn.png" alt="perfil image" />
         <div className="group cursor-default">
           <h1 className="text-x5 font-medium group-hover:text-blue-primary transition-colors duration-300 ">
             Henrique Gonçalves
