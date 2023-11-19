@@ -20,10 +20,13 @@ export const HeaderNav = ({ config, social }: HeaderProps) => {
     <div className="flex flex-col h-full">
       <div className="flex gap-3 items-center py-6 px-5 border-b-[1px]">
         <AvatarCustom src="https://github.com/shadcn.png" alt="perfil image" />
-        <div className="group cursor-default">
-          <h1 className="text-x5 font-medium group-hover:text-blue-primary transition-colors duration-300 ">
+        <div className="flex flex-col group cursor-default">
+          <Link
+            className="text-x5 font-medium group-hover:text-blue-primary transition-colors duration-300 "
+            href="/"
+          >
             Henrique Gonçalves
-          </h1>
+          </Link>
           <span className="text-base text-gray-400">
             Desenvolvedor Front-end
           </span>
