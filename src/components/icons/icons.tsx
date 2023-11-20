@@ -7,5 +7,7 @@ export {
   EnvelopeSimple as MailIcon,
   GithubLogo as GithubIcon,
   LinkedinLogo as LinkedinIcon,
-  WhatsappLogo as WhatsappIcon, List as ListIcon
+  WhatsappLogo as WhatsappIcon,
+  List as ListIcon,
+  FilePdf as PdfIcon,
 } from "@phosphor-icons/react";
