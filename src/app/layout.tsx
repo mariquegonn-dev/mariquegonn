@@ -22,10 +22,10 @@ export default function RootLayout({
         <link rel="icon" href="/icon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/icon.png" type="image/png" />
       </head>
-      <body className={`${GeistSans.className} bg-black-primary flex`}>
+      <body className={`${GeistSans.className} bg-black-primary`}>
         <Header />
         <Mobile />
-        <div className="h-[2000px]">{children}</div>
+        {children}
       </body>
     </html>
   );
