@@ -11,4 +11,5 @@ export {
   List as ListIcon,
   FilePdf as PdfIcon,
   Spinner as SpinnerIcon,
+  Bug as BugIcon,
 } from "@phosphor-icons/react";
