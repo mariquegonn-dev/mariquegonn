@@ -10,4 +10,5 @@ export {
   WhatsappLogo as WhatsappIcon,
   List as ListIcon,
   FilePdf as PdfIcon,
+  Spinner as SpinnerIcon,
 } from "@phosphor-icons/react";
