@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const NotFound = () => {
   return (
-    <div className="absolute top-0 bottom-0 left-[15vw] right-0 pt-[400px] backdrop-blur-[8px] ">
+    <div className="absolute top-0 left-[10vw] sm:left-[20vw] lg:bottom-0 md:left-[35vw] lg:right-0 lg:left-[15%] lg:pt-[400px] pt-[200px]">
       <div className="flex flex-col mx-auto max-w-max gap-2">
         <div className="flex gap-1 items-center animate-fade-in-up">
           <BugIcon size={24} />
