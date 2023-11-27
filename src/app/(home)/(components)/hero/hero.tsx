@@ -20,7 +20,9 @@ export const Hero = ({ config }: HeroProps) => {
       <ul className="flex gap-3">
         {config.map((item) => (
           <li key={item.href}>
-            <Link href={item.href}>{item.icon}</Link>
+            <Link href={item.href} target="_blank">
+              {item.icon}
+            </Link>
           </li>
         ))}
       </ul>
