@@ -9,7 +9,7 @@ export const SkillsMain = ({ config }: SkillsProps) => {
         {config.map((skill) => (
           <li
             key={skill.name}
-            className="flex items-center gap-3 border bg-black-primary hover:bg-black-secundary transition-all grou p-4 rounded-[4px]"
+            className="flex items-center gap-3 border bg-black-primary hover:bg-black-secundary transition-all grou p-4 rounded-[4px] hover:scale-105"
           >
             <Image
               width={skill.name === "Figma" ? 24 : 36}
