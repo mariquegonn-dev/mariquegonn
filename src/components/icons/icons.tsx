@@ -12,4 +12,5 @@ export {
   FilePdf as PdfIcon,
   Spinner as SpinnerIcon,
   Bug as BugIcon,
+  Coffee as CoffeeIcon,
 } from "@phosphor-icons/react";
