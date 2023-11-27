@@ -18,20 +18,20 @@ export const HeaderNav = ({ config, social }: HeaderProps) => {
 
   return (
     <div className="flex flex-col h-full">
-      <div className="flex gap-3 items-center py-6 px-5 border-b-[1px]">
+      <Link
+        className="flex gap-3 items-center py-6 px-5 border-b-[1px]"
+        href="/"
+      >
         <AvatarCustom src="https://github.com/shadcn.png" alt="perfil image" />
-        <div className="flex flex-col group cursor-default">
-          <Link
-            className="text-x5 font-medium group-hover:text-blue-primary transition-colors duration-300 "
-            href="/"
-          >
+        <div className="flex flex-col group">
+          <p className="text-x5 font-medium group-hover:text-blue-primary transition-colors duration-300 ">
             Henrique Gonçalves
-          </Link>
+          </p>
           <span className="text-base text-gray-400">
             Desenvolvedor Front-end
           </span>
         </div>
-      </div>
+      </Link>
       <nav className="flex-1">
         <ul>
           {config.map((item) => (

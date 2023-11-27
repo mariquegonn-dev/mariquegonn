@@ -1,4 +1,10 @@
-import { CodeIcon, DisketIcon, HouseIcon, MailIcon } from "@/components/icons";
+import {
+  CodeIcon,
+  CoffeeIcon,
+  DisketIcon,
+  HouseIcon,
+  MailIcon,
+} from "@/components/icons";
 import { HeaderNavType } from "./header-nav.type";
 
 export const HeaderNavConfig: HeaderNavType = [
@@ -34,6 +40,17 @@ export const HeaderNavConfig: HeaderNavType = [
       />
     ),
     href: "/skills",
+  },
+  {
+    title: "Pessoal",
+    icon: (
+      <CoffeeIcon
+        size={24}
+        weight="light"
+        className="text-gray-400 group-hover:text-white transition-all"
+      />
+    ),
+    href: "/personal",
   },
   {
     title: "Contato",
